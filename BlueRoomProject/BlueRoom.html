@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Blue Room</title>
     <link rel="stylesheet" type="text/css" href="BlueRoom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
   </head> 
 
   <body>
@@ -30,9 +33,22 @@
 
       <section id="Information" class = "tableCell">
 
-        <h1>Education</h1>
+        <div class="sectionBreak">
+          <h1>Education</h1>
 
-        <p></p>
+          <p>All the help you can get!</p>
+        </div>
+
+        <div class="sectionBreak">
+
+          <h2>All the oceanside elementary schools!!!</h2>
+
+          <div id = "schools"></div><BR><BR>
+
+        </div>
+
+
+        
 
       </section>
 
@@ -60,16 +76,31 @@
 
             <h2>Rules: </h2>
             <ul>
-              <li>No climbing the walls</li>
-              <li>No picking up the ball</li>
-              <li>No sitting on your knees</li>
-              <li>When your out, Your out !Dont Fight it!</li>
+              <li class="center">No climbing the walls</li>
+              <li class="center">No picking up the ball</li>
+              <li class="center">No sitting on your knees</li>
+              <li class="center">When your out, Your out !Dont Fight it!</li>
             </ul>
           </div>
 
           <div class="sectionBreak">
 
           <h2>Snack Time at Stay at The J</h2>
+
+          <p>At stay at the j, we have multiple types of snack</p>
+
+          <h2>Elf Grams</h2>
+          <img src="images/elfGrams.jpg" alt="elf grams">
+
+          <br>
+
+          <h2>Apples</h2>
+          <img src="images/apples.png" alt="apples">
+
+          <br>
+          <h2>Cheez-its</h2>
+          <img src="images/cheezits.gif" alt="cheese its">
+
 
           </div>
 
@@ -104,7 +135,7 @@
               <ul> 
                 <li>Big kids gym(soccer and hockey)</li>
                 <li>Little kids gaga</li>
-                <li>Free time in teen loung</li>
+                <li>Free time in teen lounge</li>
               </ul>
             </li>
 
@@ -146,6 +177,37 @@
       <a href="#top" class="links">Back to top of page</a>
       
     </footer>
+
+    <script type = "text/babel">
+      var Schools = React.createClass({
+          render: function() {
+            return <div><a href="http://www.oceansideschools.org/">I go to {this.props.name}
+                            {this.props.children}</a></div>;
+          }
+      });
+
+      var ClassSchools = React.createClass({
+          render: function() {
+            return ( 
+             <div>
+               <Schools name = "School 2">!</Schools>
+               <Schools name = "School 3">!</Schools>
+               <Schools name = "School 4">!</Schools>
+               <Schools name = "School 5">!</Schools>
+               <Schools name = "School 6">!</Schools> 
+               <Schools name = "School 8">!</Schools> 
+               <Schools name = "School 9E">!</Schools> 
+             </div>
+            );
+          }
+      });
+
+      var mountNode = document.getElementById('schools');
+      ReactDOM.render(<ClassSchools />, mountNode);
+    </script>
+
+
+
 
   </body>
 </html>

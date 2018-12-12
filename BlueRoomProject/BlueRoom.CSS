@@ -63,6 +63,11 @@ nav a:link, nav a:visited{
   margin:           0px 10px 10px 10px;
 }
 
+.center{
+  text-align: center;
+  list-style-position: inside;
+}
+
 #Information {
   padding: 15px;
   background-color: #6698FF;
