@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Fun Page</title>
+    <link rel="stylesheet" type="text/css" href="BlueRoom.css">
+    <link rel="stylesheet" type="text/css" href="thefunpage.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css" 
+                                         media="(max-width:480px)"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+  </head> 
+
+  <body>
+    <a id="top"></a>
+    <header id = "topHeader">
+         
+      <img id="headerLogo" src="images/BlueRoomLogo.jpg" alt="theblueroom">
+
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="BlueRoom.html" class="links">Home</a></li>
+        <li><a href="thefunpage.html" class="selected">The fun page</a></li>
+        <li><a href="" class="links">Oceanside school district</a></li>
+        <li><a href="" class="links">Wiley</a></li>
+        <li><a href="http://friedbergjcc.org" class="links">Back to Jcc Home Website</a></li>
+      </ul>
+    </nav>
+
+    <div class = "tableContainer">
+
+      <div class = "tableRow">
+
+      <section id="Information" class = "tableCell">
+
+        <div class="sectionBreak">
+          <h1>Education</h1>
+
+          <p>All the help you can get!</p>
+        </div>
+
+        <div class="sectionBreak transition">
+
+          <h2>All the oceanside elementary schools!!!</h2>
+
+          <div id = "schools"></div><BR><BR>
+
+        </div>
+
+        <div class="sectionBreak transition">
+
+          <h2>Math Help links</h2>
+          <ul>
+            <li><a href="https://www.wyzant.com/resources/lessons/math/elementary_math">Wyzant</a></li>
+            <li><a href="http://www.webmath.com/index3.html">Web Math</a></li>
+            <li><a href="https://www.k-5mathteachingresources.com/">k-5 math teaching resources</a></li>
+          </ul>
+        </div>
+
+        <div class="sectionBreak transition">
+
+          <h2>English, Grammar and Spelling Help</h2>
+          <ul>
+            <li><a href="https://www.spellingcity.com/">Spelling City</a></li>
+            <li><a href="https://www.education.com/resources/spelling/">Education.com</a></li>
+          </ul>
+        </div>
+
+        <div class="sectionBreak transition">
+          <h2>Social Studies Help Links</h2>
+          <ul>
+            <li><a href="https://www.dciu.org/Page/908">DCIU</a></li>
+            <li><a href="https://www.oercommons.org/curated-collections/694">OER Commons</a></li>
+          </ul>
+        </div>
+
+        <div class="sectionBreak transition">
+          <h2>Science Help Links</h2>
+          <ul>
+            <li><a href="https://www.khanacademy.org/science">Khan Science</a></li>
+            <li><a href="https://www.princetonreview.com/academic-tutoring/subjects/elementary-science">24/7 Science Help</a></li>
+          </ul>
+        </div>
+
+
+      </section>
+
+        <section id = "main" class = "tableCell">
+
+          <h1>Enjoy these new videos</h1>
+          <strong>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<br>
+            All videos and pictures are going to change weekly, so enjoy them<br>
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</strong>
+
+          <div class="sectionBreak">
+            
+            <h2>Penguin Dance</h2>
+            <video width="640" height="480" controls>
+              <source src="images/penguinvideo.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <h2>Lego Stop Motion</h2>
+          <div class="sectionBreak">
+            <video width="640" height="480" controls>
+              <source src="images/legovideo.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="sectionBreak">
+
+            <h2>Doug The Pug(click him)</h2>
+
+            <a href="#img1">
+             <img src="images/dougthepug.jpg" class="thumbnail">
+            </a>
+
+            <a href="#_" class="lightbox" id="img1">
+              <img src="images/dougthepug.jpg">
+            </a>
+          </div>
+
+        </section>
+
+        <aside id="sidebar" class = "tableCell">
+
+          <h1> Schedule </h1>
+          
+           <ol>
+            <li>
+              <p>2:45 - 3:00</p>
+              <ul>
+                <li>Arrive at JCC</li>
+                <li>Wash hands</li>
+                <li>Hang coats up</li>
+              </ul>
+            </li>
+
+            <li>
+              <p>3:00 pm - 4:00 pm</p>
+              <ul>
+                <li>Homework time</li>
+                <li>Snack Time</li>
+                <li>Relax in teen lounge when done with homework</li>
+              </ul>
+            </li>
+
+
+            <li>
+              <p>4:00 pm - 5:00 pm</p>
+              <ul> 
+                <li>Big kids gym(soccer and hockey)</li>
+                <li>Little kids gaga</li>
+                <li>Free time in teen loung</li>
+              </ul>
+            </li>
+
+
+            <li>
+              <p>5:00 pm - 6:00pm</p>
+              <ul>
+                <li>Little kids gym(free play and soccer)</li>
+                <li>Big kids gaga</li>
+                <li>Time to go home</li>
+              </ul>
+            </li>
+
+
+            <li>
+              <p>6:00 pm - 7:00 pm (ONLY FOR EXTENDED CHILDREN)</p>
+              <ul>
+                  <li>Air hockey</li>
+                  <li>Volleyball</li>
+                  <li>Stay at the J closes</li>
+              </ul>
+            </li>
+          </ol>
+          <p>
+            
+          </p>
+
+        </aside>
+
+      </div>
+
+    </div>
+
+    <footer>
+      &copy; 2018
+      <br>
+
+      <a href="#top" class="links">Back to top of page</a>
+      
+    </footer>
+
+    <script type = "text/babel">
+      var Schools = React.createClass({
+          render: function() {
+            return <div><a href="http://www.oceansideschools.org/">I go to {this.props.name}
+                            {this.props.children}</a></div>;
+          }
+      });
+
+      var ClassSchools = React.createClass({
+          render: function() {
+            return ( 
+             <div>
+               <Schools name = "School 2">!</Schools>
+               <Schools name = "School 3">!</Schools>
+               <Schools name = "School 4">!</Schools>
+               <Schools name = "School 5">!</Schools>
+               <Schools name = "School 6">!</Schools> 
+               <Schools name = "School 8">!</Schools> 
+               <Schools name = "School 9E">!</Schools> 
+             </div>
+            );
+          }
+      });
+
+      var mountNode = document.getElementById('schools');
+      ReactDOM.render(<ClassSchools />, mountNode);
+    </script>
+
+  </body>
+</html>
