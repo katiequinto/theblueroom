@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Blue Room</title>
     <link rel="stylesheet" type="text/css" href="BlueRoom.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css" 
+                                         media="(max-width:480px)"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
@@ -39,13 +41,49 @@
           <p>All the help you can get!</p>
         </div>
 
-        <div class="sectionBreak">
+        <div class="sectionBreak transition">
 
           <h2>All the oceanside elementary schools!!!</h2>
 
           <div id = "schools"></div><BR><BR>
 
         </div>
+
+        <div class="sectionBreak transition">
+
+          <h2>Math Help links</h2>
+          <ul>
+            <li><a href="https://www.wyzant.com/resources/lessons/math/elementary_math">Wyzant</a></li>
+            <li><a href="http://www.webmath.com/index3.html">Web Math</a></li>
+            <li><a href="https://www.k-5mathteachingresources.com/">k-5 math teaching resources</a></li>
+          </ul>
+        </div>
+
+        <div class="sectionBreak transition">
+
+          <h2>English, Grammar and Spelling Help</h2>
+          <ul>
+            <li><a href="https://www.spellingcity.com/">Spelling City</a></li>
+            <li><a href="https://www.education.com/resources/spelling/">Education.com</a></li>
+          </ul>
+        </div>
+
+        <div class="sectionBreak transition">
+          <h2>Social Studies Help Links</h2>
+          <ul>
+            <li><a href="https://www.dciu.org/Page/908">DCIU</a></li>
+            <li><a href="https://www.oercommons.org/curated-collections/694">OER Commons</a></li>
+          </ul>
+        </div>
+
+        <div class="sectionBreak transition">
+          <h2>Science Help Links</h2>
+          <ul>
+            <li><a href="https://www.khanacademy.org/science">Khan Science</a></li>
+            <li><a href="https://www.princetonreview.com/academic-tutoring/subjects/elementary-science">24/7 Science Help</a></li>
+          </ul>
+        </div>
+
 
 
         
@@ -64,10 +102,16 @@
           </div>
 
           <div class="sectionBreak">
+
             <h2>What is gaga?</h2>
+            <a href="#img1">
+             <img src="images/gagaPit.jpg" alt="Gaga pit">
+            </a>
 
-            <img src="images/gagaPit.jpg" alt="Gaga pit">
-
+            <a href="#_" class="lightbox" id="img1">
+              <img src="images/gagaPit.jpg" alt="Gaga pit">
+            </a>
+          
             <p>
               This is the gaga pit we use in the auditorium
             </p>
