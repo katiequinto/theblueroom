@@ -5,6 +5,9 @@
     <title>The Fun Page</title>
     <link rel="stylesheet" type="text/css" href="BlueRoom.css">
     <link rel="stylesheet" type="text/css" href="thefunpage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
   </head> 
 
   <body>
@@ -31,13 +34,37 @@
 
       <section id="Information" class = "tableCell">
 
-        <h1>Education</h1>
+        <div class="sectionBreak">
+          <h1>Education</h1>
 
-        <p></p>
+          <p>All the help you can get!</p>
+        </div>
+
+        <div class="sectionBreak">
+
+          <h2>All the oceanside elementary schools!!!</h2>
+
+          <div id = "schools"></div><BR><BR>
+
+        </div>
 
       </section>
 
         <section id = "main" class = "tableCell">
+
+          <h1>Enjoy these new videos</h1>
+
+          <div class="sectionBreak">
+            
+            <video width="640" height="480" controls>
+              <source src="images/penguinvideo.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="section">
+            <video width="640" height="480" controls>
+              <source src="images/legovideo.mp4" type="video/mp4">
+            </video>
 
           
         </section>
@@ -112,6 +139,34 @@
       <a href="#top" class="links">Back to top of page</a>
       
     </footer>
+
+    <script type = "text/babel">
+      var Schools = React.createClass({
+          render: function() {
+            return <div><a href="http://www.oceansideschools.org/">I go to {this.props.name}
+                            {this.props.children}</a></div>;
+          }
+      });
+
+      var ClassSchools = React.createClass({
+          render: function() {
+            return ( 
+             <div>
+               <Schools name = "School 2">!</Schools>
+               <Schools name = "School 3">!</Schools>
+               <Schools name = "School 4">!</Schools>
+               <Schools name = "School 5">!</Schools>
+               <Schools name = "School 6">!</Schools> 
+               <Schools name = "School 8">!</Schools> 
+               <Schools name = "School 9E">!</Schools> 
+             </div>
+            );
+          }
+      });
+
+      var mountNode = document.getElementById('schools');
+      ReactDOM.render(<ClassSchools />, mountNode);
+    </script>
 
   </body>
 </html>
