@@ -107,7 +107,7 @@ nav a:link, nav a:visited{
 }
 
 .transition:hover{
-  background-color: darkblue;
+  background-color: #82CAFF;
   color: white;
 }
 
@@ -202,5 +202,5 @@ a:visited {
 }
 
 a:hover{
-  color: green;
+  color: darkblue;
 }

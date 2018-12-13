@@ -106,7 +106,7 @@ nav a:link, nav a:visited{
 }
 
 .transition:hover{
-  background-color: darkblue;
+  background-color: #82CAFF;
   color: white;
 }
 
@@ -200,7 +200,6 @@ a:visited {
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
-
 a:hover{
-  color: green;
+  color: darkblue;
 }
