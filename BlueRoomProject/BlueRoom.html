@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Blue Room</title>
-    <link rel="stylesheet" type="text/css" href="BlueRoom.css">
+    <link rel="stylesheet" type="text/css" href="BlueRoom.CSS">
+    <link rel="stylesheet" type="text/css" href="thefunpage.css">
     <link rel="stylesheet" type="text/css" href="mobile.css" 
                                          media="(max-width:480px)"/>
-    <link rel="stylesheet" type="text/css" href="thefunpage.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
@@ -24,9 +24,9 @@
       <ul>
         <li><a href="BlueRoom.html" class="links selected">Home</a></li>
         <li><a href="thefunpage.html" class="links">The fun page</a></li>
-        <li><a href="" class="links">Oceanside school district</a></li>
-        <li><a href="" class="links">Wiley</a></li>
-        <li><a href="http://friedbergjcc.org" class="links">Back to Jcc Home Website</a></li>
+        <li><a href="http://www.oceansideschools.org/" class="links" target="newpage">Oceanside school district</a></li>
+        <li><a href="https://onlinelibrary.wiley.com/" class="links" target="newpage">Wiley</a></li>
+        <li><a href="http://friedbergjcc.org" class="links" target="newpage">Back to Jcc Home Website</a></li>
       </ul>
     </nav>
 
@@ -54,9 +54,9 @@
 
           <h2>Math Help links</h2>
           <ul>
-            <li><a href="https://www.wyzant.com/resources/lessons/math/elementary_math">Wyzant</a></li>
-            <li><a href="http://www.webmath.com/index3.html">Web Math</a></li>
-            <li><a href="https://www.k-5mathteachingresources.com/">k-5 math teaching resources</a></li>
+            <li><a href="https://www.wyzant.com/resources/lessons/math/elementary_math" target="newpage">Wyzant</a></li>
+            <li><a href="http://www.webmath.com/index3.html" target="newpage">Web Math</a></li>
+            <li><a href="https://www.k-5mathteachingresources.com/" target="newpage">k-5 math teaching resources</a></li>
           </ul>
         </div>
 
@@ -64,29 +64,50 @@
 
           <h2>English, Grammar and Spelling Help</h2>
           <ul>
-            <li><a href="https://www.spellingcity.com/">Spelling City</a></li>
-            <li><a href="https://www.education.com/resources/spelling/">Education.com</a></li>
+            <li><a href="https://www.spellingcity.com/" target="newpage">Spelling City</a></li>
+            <li><a href="https://www.education.com/resources/spelling/" target="newpage">Education.com</a></li>
           </ul>
         </div>
 
         <div class="sectionBreak transition">
           <h2>Social Studies Help Links</h2>
           <ul>
-            <li><a href="https://www.dciu.org/Page/908">DCIU</a></li>
-            <li><a href="https://www.oercommons.org/curated-collections/694">OER Commons</a></li>
+            <li><a href="https://www.dciu.org/Page/908" target="newpage">DCIU</a></li>
+            <li><a href="https://www.oercommons.org/curated-collections/694" target="newpage">OER Commons</a></li>
           </ul>
         </div>
 
         <div class="sectionBreak transition">
           <h2>Science Help Links</h2>
           <ul>
-            <li><a href="https://www.khanacademy.org/science">Khan Science</a></li>
-            <li><a href="https://www.princetonreview.com/academic-tutoring/subjects/elementary-science">24/7 Science Help</a></li>
+            <li><a href="https://www.khanacademy.org/science" target="newpage">Khan Science</a></li>
+            <li><a href="https://www.princetonreview.com/academic-tutoring/subjects/elementary-science" target="newpage">24/7 Science Help</a></li>
           </ul>
         </div>
 
+        <br>
 
+        <div class="sectionBreak">
+          <h1>Entertainment</h1>
+          <p>THIS SECTION IS FOR AFTER HOMEWORK IS DONE, WE'LL BE CHECKING!</p>
+        </div>
 
+        <div class="sectionBreak transition">
+          <h2>Tv and Movies (ask for stay at the j log in's)</h2>
+          <ul>
+            <li><a href="https://www.netflix.com/" target="newpage">Netflix</a></li>
+            <li><a href="https://www.hulu.com/welcome" target="newpage">Hulu</a></li>
+          </ul>
+        </div>
+
+        <div class="sectionBreak transition">
+          <h2>Games</h2>
+          <ul>
+            <li><a href="http://www.addictinggames.com/" target="newpage">Addicting Games</a></li>
+            <li><a href="https://www.miniclip.com/games/en/" target="newpage">Mini Clip</a></li>
+            <li><a href="https://www.clubpenguinisland.com/" target="newpage">Club Penguin</a></li>
+          </ul>
+        </div>
         
 
       </section>
@@ -104,10 +125,16 @@
 
           <div class="sectionBreak">
 
-            <h2>What is gaga?</h2>
-            
+            <h1>What is gaga?</h1>
+
+
+            <a href="#img1">
+             <img src="images/gagaPit.jpg" class="thumbnail" alt="gaga pit">
+            </a>
+
+            <a href="#_" class="lightbox" id="img1">
               <img src="images/gagaPit.jpg" alt="Gaga pit">
-            
+            </a>
           
             <p>
               This is the gaga pit we use in the auditorium
@@ -126,21 +153,56 @@
 
           <div class="sectionBreak">
 
-          <h2>Snack Time at Stay at The J</h2>
+            <h1>Snack Time at Stay at The J</h1>
 
-          <p>At stay at the j, we have multiple types of snack</p>
+            <p>At stay at the j, we have multiple types of snack</p>
 
-          <h2>Elf Grams</h2>
-          <img src="images/elfGrams.jpg" alt="elf grams">
+            <h2>Elf Grams</h2>
+              <a href="#img2">
+               <img src="images/elfGrams.jpg" class="thumbnail" alt="elf grams">
+              </a>
 
-          <br>
+              <a href="#_" class="lightbox" id="img2">
+                <img src="images/elfGrams.jpg" alt="elf grams">
+              </a>
 
-          <h2>Apples</h2>
-          <img src="images/apples.png" alt="apples">
+            <br>
 
-          <br>
-          <h2>Cheez-its</h2>
-          <img src="images/cheezits.gif" alt="cheese its">
+            <h2>Apples</h2>
+
+            <img src="images/apples.png" alt="apples" class="thumbnail">
+
+            <br>
+            <h2>Cheez-its</h2>
+            <img src="images/cheezits.gif" alt="cheese its" class="thumbnail">
+          </div>
+
+          <div class="sectionBreak">
+            <h1>Teen Loung Games</h1>
+            <p>In the teen lounge, we have many games that you can play!</p>
+
+            <h2>Air hockey</h2>
+            <img src="images/airhockey.jpg" alt="airhockey" class="thumbnail">
+            <p>
+              How to Play Air Hockey
+              Air hockey is an individual sport that consists of two single player teams on opposite ends of the table. Players stand behind the end rail and centered behind their goal box they are trying to defend. They hold a mallet in one of their hands and place it in front of their goal box to protect the puck from going in their goal. Once the puck has crossed the centerline on your side of the table, each player attempts to strike the puck against their mallet towards their opponent's goal. There are a variety of offensive shots that can be performed to score such as the straight, angled, bank, double bank and more. Bank shots can be performed by using the side rails to bounce off of them at the right angle to score. The mallet is usually positioned about 8-14 inches in front of your goal box when playing defense and can be moved further out on offense to strike the puck for a shot.
+            </p>  
+
+            <h2>Giant Connect 4</h2>
+            <img src="images/connect4.jpg" alt="connect4" class="thumbnail">
+            <p>Connect Four has remained a timeless game over the years for very good reason. The game is fun and approachable, which makes it accessible for people of all ages.</p>
+
+            <h2>Mancala</h2>
+            <img src="images/mancala.jpg" alt="mancala" class="thumbnail">
+            <p>Mancala is a name given to a large family of "Pit and Seeds" or "Count, Sow and Capture" games - one of the oldest games known.</p>
+
+            <h2>Checkers</h2>
+            <img src="images/checkers.jpg" alt="checkers" class="thumbnail">
+            <p>
+              Checkers is a board game played between two people on an 8x8 checked board like the one shown below. 
+              Each player has 12 pieces that are like flat round disks that fit inside each of the boxes on the board. The pieces are placed on every other dark square and then staggered by rows, like shown on the board.
+              Each Checkers player has different colored pieces. Sometimes the pieces are black and red or red and white. 
+            </p> 
 
 
           </div>
@@ -212,7 +274,9 @@
     </div>
 
     <footer>
-      &copy; 2018
+      &copy; 2018 The Katie Quinto Coporation
+
+      <br>
       <br>
 
       <a href="#top" class="links">Back to top of page</a>
@@ -222,7 +286,7 @@
     <script type = "text/babel">
       var Schools = React.createClass({
           render: function() {
-            return <div><a href="http://www.oceansideschools.org/">I go to {this.props.name}
+            return <div><a href="http://www.oceansideschools.org/" target="newpage">I go to {this.props.name}
                             {this.props.children}</a></div>;
           }
       });
